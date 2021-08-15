@@ -25,4 +25,9 @@ button {
 color:  #016f32;
 width: 150px ;
 background : goldenrod; 
+border: none;
+border-radius: 2px;
+font-weight: bold;
+padding: 10px 0px;
+
 }
