@@ -9,8 +9,11 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 // 2. Store the cards paragraph in a variable called cardsEl
 let cardsEl = document.getElementById("cards-el")
-
+// Create a new function called startGame() that calls renderGame()
 function startGame() {
+    renderGame();
+}
+function renderGame() {
     cardsEl.textContent = "cards: " + firstCard + " " +secondCard
     sumEl.textContent = " Sum: "+ sum;
     if (sum <= 20) {
@@ -32,6 +35,6 @@ function newCard() {
     // 2. Add the new card to the sum variable
     sum += card
     // 3. Call startGame()
-    startGame()
+    renderGame()
 }
 newCard();
