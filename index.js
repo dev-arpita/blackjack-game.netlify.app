@@ -14,3 +14,7 @@ let newMessage = "Same here!"
 
 messages.push(newMessage);
 console.log(messages);
+// How can you remove the last item in an array? Try to google it!
+messages.pop(); //to remove last element of an array
+messages.shift(); //to remove first element of an array
+console.log(messages)
