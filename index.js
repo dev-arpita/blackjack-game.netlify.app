@@ -1,43 +1,12 @@
-let firstCard = 10
-let secondCard = 4
-// 1. Create a new array - cards - that contains firstCard and secondCard
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard
-let hasBlackJack = false
-let isAlive = true
-let message = ""
-let messageEl = document.getElementById("message-el")
-let sumEl = document.getElementById("sum-el")
-let cardsEl = document.getElementById("cards-el")
+// Count to ten!
 
-function startGame() {
-    renderGame()
+// We need to specify...
+
+// Where should we START counting?
+// Where is the FINISH line?
+// What's the STEP SIZE we should use?
+//      START         FINISH        STEP SIZE
+
+for (let count = 10; count < 21 ;   count += 1) {
+    console.log(count);
 }
-
-function renderGame() {
-    // 2. Refer to the cards array when rendering out the cards
-    cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1]
-    //cardsEl.textContent = "cards: " + cards //my fisrt solution
-    sumEl.textContent = "Sum: " + sum
-    if (sum <= 20) {
-        message = "Do you want to draw a new card?"
-    } else if (sum === 21) {
-        message = "You've got Blackjack!"
-        hasBlackJack = true
-    } else {
-        message = "You're out of the game!"
-        isAlive = false
-    }
-    messageEl.textContent = message
-}
-
-function newCard() {
-    let card = 6
-    sum += card
-    // Push the card to the cards array
-    cards.push(card)
-    console.log(cards)
-    renderGame()
-}
-
-
