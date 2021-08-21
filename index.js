@@ -52,31 +52,6 @@ function newCard() {
     renderGame()
 }
 
-// let randomNumber = Math.random() * 6
+let randomNumber = Math.floor(Math.random()*6);
 
-// console.log(randomNumber)
-
-
-/* 
-
-In which range will our randomNumber be now?
-
-From: 0
-To: 5.999
-
-*/
-
-// let randomNumber = Math.random() * 6
-
-let flooredNumber = Math.floor(12.999999999999)
-
-console.log(flooredNumber); //12
-
-
-/* 
-
-What does Math.floor() do to positive numbers?
-
-Your answer: it removes the decimals
-
-*/
+console.log(randomNumber);
