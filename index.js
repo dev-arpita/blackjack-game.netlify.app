@@ -15,15 +15,17 @@ function getRandomCard() {
     return 5;
    
 }
-let randomNumber = Math.random()
+let randomNumber = Math.random() * 6
 
 console.log(randomNumber)
 
+
 /* 
 
-What does Math.random() do?
+In which range will our randomNumber be now?
 
-Your answer: it generates a random number between 0 and 1 (not inclusive of 1)
+From: 0
+To: 5.999
 
 */
 
