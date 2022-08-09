@@ -63,3 +63,20 @@ function newCard() {
         renderGame()
     }
 }
+
+//Learned building this game-site
+// Arrays
+//Objects
+//arrays nesting into objects
+// a object nesting into another object
+//objects and methods
+//booleans
+// reassignment of variables
+//Math object with .randon & .floor method
+// if else statement
+//comparison operator( >, < , === , <=, >=)
+//logical operators (&& AND , OR ||)
+//for loops
+// a functions nesting into  another functions
+//return statement
+//difference between using return and console.log
