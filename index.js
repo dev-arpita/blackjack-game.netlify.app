@@ -1,20 +1,4 @@
 
-//logical OR operator:
-// Create two boolean variables, likesDocumentaries and likesStartups
-// Use an OR statement (||) to call recommendMovie() if either of those variables are true
-
-let likesDocumentaries = true
-let likesStartups = true
-
-if (likesDocumentaries === true || likesStartups === true) {
-    recommendMovie()
-}
-
-function recommendMovie() {
-    console.log("Hey, check out this new film we think you will like!")
-}
-
-//Apply AND operator to blackjack game
 let cards = []
 let sum = 0
 let hasBlackJack = false
@@ -23,6 +7,14 @@ let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
+
+// Add player details (with Object data type)
+let player = {
+    name  : Arpita,
+    chips : 145
+}
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips;
 
 function getRandomCard() {
     let randomNumer = Math.floor( Math.random()*13 ) + 1
